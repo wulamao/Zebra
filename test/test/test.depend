@@ -1,0 +1,190 @@
+# depslib dependency file v1.0
+1542265977 source:c:\users\surface\desktop\单片机程序架构设计\zebra\em\em.c
+	"em.h"
+
+1542266155 c:\users\surface\desktop\单片机程序架构设计\zebra\em\em.h
+
+1542266237 source:c:\users\surface\desktop\单片机程序架构设计\zebra\em\em_behavior.c
+	"em.h"
+	"em_interface.h"
+	"../lib/c-algorithms/src/queue.h"
+
+1542266126 c:\users\surface\desktop\单片机程序架构设计\zebra\em\em_interface.h
+	"../lib/c-algorithms/src/queue.h"
+
+1542264985 source:c:\users\surface\desktop\单片机程序架构设计\zebra\em\em_thread.c
+	"em_interface.h"
+	"em_behavior.h"
+	"../lib/pt-1.4/pt.h"
+
+1542262299 c:\users\surface\desktop\单片机程序架构设计\zebra\em\em_behavior.h
+
+1159775576 c:\users\surface\desktop\单片机程序架构设计\zebra\lib\pt-1.4\pt.h
+	"lc.h"
+
+1109241419 c:\users\surface\desktop\单片机程序架构设计\zebra\lib\pt-1.4\lc.h
+	"lc-switch.h"
+
+1149334183 c:\users\surface\desktop\单片机程序架构设计\zebra\lib\pt-1.4\lc-switch.h
+
+1468516157 source:c:\users\surface\desktop\单片机程序架构设计\zebra\lib\c-algorithms\src\arraylist.c
+	<stdlib.h>
+	<string.h>
+	"arraylist.h"
+	"alloc-testing.h"
+
+1468516157 c:\users\surface\desktop\单片机程序架构设计\zebra\lib\c-algorithms\src\arraylist.h
+
+1468516157 source:c:\users\surface\desktop\单片机程序架构设计\zebra\lib\c-algorithms\src\avl-tree.c
+	<stdlib.h>
+	"avl-tree.h"
+	"alloc-testing.h"
+
+1468516157 c:\users\surface\desktop\单片机程序架构设计\zebra\lib\c-algorithms\src\avl-tree.h
+
+1468516157 source:c:\users\surface\desktop\单片机程序架构设计\zebra\lib\c-algorithms\src\binary-heap.c
+	<stdlib.h>
+	"binary-heap.h"
+	"alloc-testing.h"
+
+1468516157 c:\users\surface\desktop\单片机程序架构设计\zebra\lib\c-algorithms\src\binary-heap.h
+
+1468516157 source:c:\users\surface\desktop\单片机程序架构设计\zebra\lib\c-algorithms\src\binomial-heap.c
+	<stdlib.h>
+	<string.h>
+	<limits.h>
+	"binomial-heap.h"
+	"alloc-testing.h"
+
+1468516157 c:\users\surface\desktop\单片机程序架构设计\zebra\lib\c-algorithms\src\binomial-heap.h
+
+1468516157 source:c:\users\surface\desktop\单片机程序架构设计\zebra\lib\c-algorithms\src\bloom-filter.c
+	<stdlib.h>
+	<string.h>
+	"bloom-filter.h"
+	"alloc-testing.h"
+
+1468516157 c:\users\surface\desktop\单片机程序架构设计\zebra\lib\c-algorithms\src\bloom-filter.h
+
+1468516157 source:c:\users\surface\desktop\单片机程序架构设计\zebra\lib\c-algorithms\src\compare-int.c
+	"compare-int.h"
+
+1468516157 c:\users\surface\desktop\单片机程序架构设计\zebra\lib\c-algorithms\src\compare-int.h
+
+1468516157 source:c:\users\surface\desktop\单片机程序架构设计\zebra\lib\c-algorithms\src\compare-pointer.c
+	"compare-pointer.h"
+
+1468516157 c:\users\surface\desktop\单片机程序架构设计\zebra\lib\c-algorithms\src\compare-pointer.h
+
+1468516157 source:c:\users\surface\desktop\单片机程序架构设计\zebra\lib\c-algorithms\src\compare-string.c
+	<ctype.h>
+	<stdlib.h>
+	<string.h>
+	"compare-string.h"
+
+1468516157 c:\users\surface\desktop\单片机程序架构设计\zebra\lib\c-algorithms\src\compare-string.h
+
+1468516157 source:c:\users\surface\desktop\单片机程序架构设计\zebra\lib\c-algorithms\src\hash-int.c
+	"hash-int.h"
+
+1468516157 c:\users\surface\desktop\单片机程序架构设计\zebra\lib\c-algorithms\src\hash-int.h
+
+1468516157 source:c:\users\surface\desktop\单片机程序架构设计\zebra\lib\c-algorithms\src\hash-pointer.c
+	<limits.h>
+	"hash-pointer.h"
+
+1468516157 c:\users\surface\desktop\单片机程序架构设计\zebra\lib\c-algorithms\src\hash-pointer.h
+
+1468516157 source:c:\users\surface\desktop\单片机程序架构设计\zebra\lib\c-algorithms\src\hash-string.c
+	<ctype.h>
+	"hash-string.h"
+
+1468516157 c:\users\surface\desktop\单片机程序架构设计\zebra\lib\c-algorithms\src\hash-string.h
+
+1468516157 source:c:\users\surface\desktop\单片机程序架构设计\zebra\lib\c-algorithms\src\hash-table.c
+	<stdlib.h>
+	<string.h>
+	"hash-table.h"
+	"alloc-testing.h"
+
+1468516157 c:\users\surface\desktop\单片机程序架构设计\zebra\lib\c-algorithms\src\hash-table.h
+
+1468516157 source:c:\users\surface\desktop\单片机程序架构设计\zebra\lib\c-algorithms\src\list.c
+	<stdlib.h>
+	"list.h"
+	"alloc-testing.h"
+
+1468516157 c:\users\surface\desktop\单片机程序架构设计\zebra\lib\c-algorithms\src\list.h
+
+1468516157 source:c:\users\surface\desktop\单片机程序架构设计\zebra\lib\c-algorithms\src\queue.c
+	<stdlib.h>
+	"queue.h"
+	"alloc-testing.h"
+
+1542265450 c:\users\surface\desktop\单片机程序架构设计\zebra\lib\c-algorithms\src\queue.h
+
+1468516157 source:c:\users\surface\desktop\单片机程序架构设计\zebra\lib\c-algorithms\src\rb-tree.c
+	<stdlib.h>
+	"rb-tree.h"
+	"alloc-testing.h"
+
+1468516157 c:\users\surface\desktop\单片机程序架构设计\zebra\lib\c-algorithms\src\rb-tree.h
+
+1468516157 source:c:\users\surface\desktop\单片机程序架构设计\zebra\lib\c-algorithms\src\set.c
+	<stdlib.h>
+	<string.h>
+	"set.h"
+	"alloc-testing.h"
+
+1468516157 c:\users\surface\desktop\单片机程序架构设计\zebra\lib\c-algorithms\src\set.h
+
+1468516157 source:c:\users\surface\desktop\单片机程序架构设计\zebra\lib\c-algorithms\src\slist.c
+	<stdlib.h>
+	"slist.h"
+	"alloc-testing.h"
+
+1468516157 c:\users\surface\desktop\单片机程序架构设计\zebra\lib\c-algorithms\src\slist.h
+
+1468516157 source:c:\users\surface\desktop\单片机程序架构设计\zebra\lib\c-algorithms\src\sortedarray.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"sortedarray.h"
+	"alloc-testing.h"
+
+1468516157 c:\users\surface\desktop\单片机程序架构设计\zebra\lib\c-algorithms\src\sortedarray.h
+
+1468516157 source:c:\users\surface\desktop\单片机程序架构设计\zebra\lib\c-algorithms\src\trie.c
+	<stdlib.h>
+	<string.h>
+	"trie.h"
+	"alloc-testing.h"
+
+1468516157 c:\users\surface\desktop\单片机程序架构设计\zebra\lib\c-algorithms\src\trie.h
+
+1128662493 source:c:\users\surface\desktop\单片机程序架构设计\zebra\lib\pt-1.4\example-buffer.c
+	<windows.h>
+	<unistd.h>
+	<stdio.h>
+	"pt-sem.h"
+
+1109241419 c:\users\surface\desktop\单片机程序架构设计\zebra\lib\pt-1.4\pt-sem.h
+	"pt-sem.h"
+	"pt.h"
+
+1128585428 source:c:\users\surface\desktop\单片机程序架构设计\zebra\lib\pt-1.4\example-codelock.c
+	<windows.h>
+	<unistd.h>
+	<sys/time.h>
+	<stdio.h>
+	"pt.h"
+
+1149192940 source:c:\users\surface\desktop\单片机程序架构设计\zebra\lib\pt-1.4\example-small.c
+	"pt.h"
+	<stdio.h>
+
+1542264527 source:c:\users\surface\desktop\单片机程序架构设计\zebra\test\test\main.c
+	<stdio.h>
+	<stdlib.h>
+	"../../lib/pt-1.4/pt.h"
+

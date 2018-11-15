@@ -1,5 +1,11 @@
 {
     "files.associations": {
-        "em_behavior.h": "c"
+        "em_behavior.h": "c",
+        "em_interface.h": "c",
+        "queue.h": "c",
+        "queue.h\u0000eue.h": "c",
+        "queue.h\u0000queue.h": "c",
+        "queue.h\u0000ueue.h": "c",
+        "em.h": "c"
     }
 }
