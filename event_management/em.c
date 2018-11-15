@@ -1,4 +1,5 @@
 #include "em.h"
+#include "em_behavior.h"
 
 typedef struct _Event_t
 {
@@ -34,39 +35,9 @@ typedef struct _Event_management_t
 } Event_management_t; /* 事件管理接口结构体 */
 
 
-void * event_queue_create(void)
-{
-    return 0;
-}
-
-void event_queue_push(void)
-{
-    ;
-}
-
-void event_queue_pop(void)
-{
-    ;
-}
-
-void event_queue_lookup(void)
-{
-    ;
-}
-
-void event_queue_sort(void)
-{
-    ;
-}
-
-void event_queue_traversal(void)
-{
-    ;
-}
-
 Event_management_t MCU_EM =
 {
-    .init      = ((void *) event_queue_init),
+    .init      = ((void *) event_queue_create),
     .reg       = ((void *) event_queue_push),
     .rm        = ((void *) event_queue_pop),
     .lookup    = ((void *) event_queue_lookup),
