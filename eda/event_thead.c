@@ -16,10 +16,24 @@ Event_manager_t EManager =
 {
     .init      = eq_init,
     .del       = eq_del,
-    .reg       = event_reg,
-    .rm        = event_rm,
-    .lookup    = event_lookup,
-    .traversal = event_traversal,
+    .push      = eq_push,
+    .pop       = eq_pop,
+    .lookup    = eq_lookup,
+    .iterator  = eq_iterator,
+};
+
+/**
+ * cb manager entity.
+ */
+Cb_manager_t CBManager =
+{
+    .create     = eq_init,
+    .destroy    = eq_del,
+    .push       = eq_push,
+    .pop        = eq_pop,
+    .lookup     = eq_lookup,
+    .iterator   = eq_iterator,
+    .sort       = 0,
 };
 
 /**
@@ -46,24 +60,28 @@ int event_thread(struct pt *pt)
 {
     PT_BEGIN(pt);
 
-    event1.event.cb_head = queue_new();
-    queue_push_head(event1.event.cb_head, &cb1);
+    event1.event.cb_head = CBManager.create();
+    /* 回调函数注册 */
+    CBManager.push(event1.event.cb_head, &cb1);
 
     /* event container pointer. */
     EventContainer event_queue = EManager.init();
+    EManager.push(event_queue, &event1);
+
     printf(" event_queue address is %#x \n", event_queue);
     printf(" event1.event.head address is %#x \n", event1.event.cb_head);
-    EManager.reg(event_queue, &event1);
+
 
     while(1)
     {
-        Event_pair_t* ev = (Event_pair_t *)EManager.rm(event_queue, &event1);
-        Cb_t* cbx = (Cb_t *)queue_pop_head(event1.event.cb_head);
+        Event_pair_t* ev = (Event_pair_t *)EManager.pop(event_queue);
+        Cb_t* cbx = (Cb_t *)CBManager.pop(ev->event.cb_head);
+
         cbx->func(1,1);
+
         /* Wait until the other protothread has set its flag. */
         PT_WAIT_UNTIL(pt, 0 != 0);
         printf(" ==== \n");
-
     }
 
     PT_END(pt);

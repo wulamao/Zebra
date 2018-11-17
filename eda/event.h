@@ -1,36 +1,15 @@
 
 
 /**
- * define container structure.
- */
-typedef struct _Container_t
-{
-    /* max size */
-    unsigned int max_size;
-    /* size */
-    unsigned int size;
-
-    /* create container */
-    void (*create)(void);
-    /* delete container */
-    void (*destroy)(void* c);
-    /* cb register */
-    void* (*add)(void* c, void* data);
-    /* remove*/
-    void* (*rm)(void* c, void* data);
-    /* lookup */
-    void* (*lookup)(void* c, unsigned int method);
-    /* event traversal */
-    void* (*traversal)(void* c);
-    /* sort */
-    void (*sort)(void* c);
-} Container_t;
-
-
-/**
  * define event container structure.
  */
 typedef void *EventContainer;
+
+
+/**
+ * define cb container structure.
+ */
+typedef void *CbContainer;
 
 /**
  * define event message type.
@@ -89,14 +68,39 @@ typedef struct _Event_manager_t
     /* delete event container */
     void (*del)(EventContainer c);
     /* cb register*/
-    void* (*reg)(EventContainer c, Cb_t *cb);
+    void* (*push)(EventContainer c, Cb_t *cb);
     /* cb remove*/
-    void* (*rm)(EventContainer c, Cb_t *cb);
+    void* (*pop)(EventContainer c);
     /* event lookup*/
     void* (*lookup)(EventContainer c, unsigned int method);
     /* event traversal*/
-    void* (*traversal)(EventContainer c);
+    void* (*iterator)(EventContainer c);
 
 } Event_manager_t;
 
 
+/**
+ * define callback manager structure.
+ */
+typedef struct _Cb_manager_t
+{
+    /* max size */
+    unsigned int max_size;
+    /* size */
+    unsigned int size;
+
+    /* create cb queue */
+    CbContainer (*create)(void);
+    /* delete cb queue */
+    void (*destroy)(CbContainer c);
+    /* cb push */
+    void* (*push)(CbContainer c, void* data);
+    /* cb pop */
+    CbContainer (*pop)(CbContainerc);
+    /* lookup */
+    void* (*lookup)(CbContainer c, unsigned int method);
+    /* cb queue traversal */
+    void* (*iterator)(CbContainer c);
+    /* sort */
+    void (*sort)(CbContainer c);
+} Cb_manager_t;

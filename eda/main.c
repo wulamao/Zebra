@@ -4,7 +4,11 @@
 #include "event.h"
 #include "stdio.h"
 
+#include "stdlib.h"
+#include "assert.h"
+
 struct pt pt1;
+
 
 int main() {
 

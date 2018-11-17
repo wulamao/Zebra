@@ -14,23 +14,23 @@ void eq_del(void* c)
     queue_free((Queue *)c);
 }
 /* cb register*/
-void* event_reg(void* c, Event_pair_t *ev)
+void* eq_push(void* c, Event_pair_t *ev)
 {
     queue_push_head((Queue *)c, ev);
 }
 
 /* cb remove*/
-void* event_rm(void* c, Event_pair_t *ev)
+void* eq_pop(void* c, Event_pair_t *ev)
 {
     return queue_pop_head((Queue *)c);
 }
 /* event lookup*/
-void* event_lookup(void* c, unsigned int method)
+void* eq_lookup(void* c, unsigned int method)
 {
     return 0;
 }
 /* event traversal*/
-void* event_traversal(void* c)
+void* eq_iterator(void* c)
 {
     return 0;
 }

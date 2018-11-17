@@ -9,7 +9,8 @@
         "em.h": "c",
         "pt.h": "c",
         "event.h": "c",
-        "event_behavior.h": "c"
+        "event_behavior.h": "c",
+        "queue": "c"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }

@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1542451734 source:c:\users\surface\desktop\单片机程序架构设计\zebra\eda\event_thead.c
+1542469469 source:c:\users\surface\desktop\单片机程序架构设计\zebra\eda\event_thead.c
 	"pt.h"
 	"event.h"
 	"event_behavior.h"
@@ -13,23 +13,70 @@
 
 1149334183 c:\users\surface\desktop\单片机程序架构设计\zebra\eda\lc-switch.h
 
-1542451874 c:\users\surface\desktop\单片机程序架构设计\zebra\eda\event.h
+1542469389 c:\users\surface\desktop\单片机程序架构设计\zebra\eda\event.h
 
 1542265450 c:\users\surface\desktop\单片机程序架构设计\zebra\eda\queue.h
 
-1542447919 source:c:\users\surface\desktop\单片机程序架构设计\zebra\eda\main.c
+1542467295 source:c:\users\surface\desktop\单片机程序架构设计\zebra\eda\main.c
 	"pt.h"
 	"event.h"
 	"stdio.h"
+	"stdlib.h"
+	"assert.h"
 
 1468516157 source:c:\users\surface\desktop\单片机程序架构设计\zebra\eda\queue.c
 	<stdlib.h>
 	"queue.h"
 	"alloc-testing.h"
 
-1542450242 c:\users\surface\desktop\单片机程序架构设计\zebra\eda\event_behavior.h
+1542469353 c:\users\surface\desktop\单片机程序架构设计\zebra\eda\event_behavior.h
 
-1542450669 source:c:\users\surface\desktop\单片机程序架构设计\zebra\eda\event_behavior.c
+1542469361 source:c:\users\surface\desktop\单片机程序架构设计\zebra\eda\event_behavior.c
 	"event.h"
 	"queue.h"
+
+1468516157 source:c:\users\surface\desktop\单片机程序架构设计\zebra\eda\compare-int.c
+	"compare-int.h"
+
+1468516157 c:\users\surface\desktop\单片机程序架构设计\zebra\eda\compare-int.h
+
+1468516157 source:c:\users\surface\desktop\单片机程序架构设计\zebra\eda\compare-pointer.c
+	"compare-pointer.h"
+
+1468516157 c:\users\surface\desktop\单片机程序架构设计\zebra\eda\compare-pointer.h
+
+1468516157 source:c:\users\surface\desktop\单片机程序架构设计\zebra\eda\compare-string.c
+	<ctype.h>
+	<stdlib.h>
+	<string.h>
+	"compare-string.h"
+
+1468516157 c:\users\surface\desktop\单片机程序架构设计\zebra\eda\compare-string.h
+
+1542449377 source:c:\users\surface\desktop\单片机程序架构设计\zebra\eda\container_behavior.c
+
+1468516157 source:c:\users\surface\desktop\单片机程序架构设计\zebra\eda\hash-int.c
+	"hash-int.h"
+
+1468516157 c:\users\surface\desktop\单片机程序架构设计\zebra\eda\hash-int.h
+
+1468516157 source:c:\users\surface\desktop\单片机程序架构设计\zebra\eda\hash-pointer.c
+	<limits.h>
+	"hash-pointer.h"
+
+1468516157 c:\users\surface\desktop\单片机程序架构设计\zebra\eda\hash-pointer.h
+
+1468516157 source:c:\users\surface\desktop\单片机程序架构设计\zebra\eda\hash-string.c
+	<ctype.h>
+	"hash-string.h"
+
+1468516157 c:\users\surface\desktop\单片机程序架构设计\zebra\eda\hash-string.h
+
+1468516157 source:c:\users\surface\desktop\单片机程序架构设计\zebra\eda\hash-table.c
+	<stdlib.h>
+	<string.h>
+	"hash-table.h"
+	"alloc-testing.h"
+
+1468516157 c:\users\surface\desktop\单片机程序架构设计\zebra\eda\hash-table.h
 
