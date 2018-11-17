@@ -24,7 +24,7 @@ typedef struct _Event_t
 } Event_t; /*事件节点结构定义*/
 
 typedef struct _Event_t Event_t;
-
+typedef void *Event;
 
 /**
  * Add a event to the head of a queue.

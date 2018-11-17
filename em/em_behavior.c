@@ -2,6 +2,8 @@
 #include "em_interface.h"
 #include "../lib/c-algorithms/src/queue.h"
 
+
+
 EVENT_QUEUE_T* event_queue_create(void)
 {
     return queue_new();
@@ -16,8 +18,8 @@ void* event_queue_pop(EVENT_QUEUE_T eq, unsigned int id)
 unsigned int event_queue_push(EVENT_QUEUE_T eq,
         unsigned int type,
         unsigned int priority,
-        void  *context,
-        char  *str
+        void *context,
+        char *str
         )
 {
     Event_t* event = malloc(sizeof(Event_t));

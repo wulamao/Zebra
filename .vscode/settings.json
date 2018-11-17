@@ -6,6 +6,10 @@
         "queue.h\u0000eue.h": "c",
         "queue.h\u0000queue.h": "c",
         "queue.h\u0000ueue.h": "c",
-        "em.h": "c"
-    }
+        "em.h": "c",
+        "pt.h": "c",
+        "event.h": "c",
+        "event_behavior.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
 }

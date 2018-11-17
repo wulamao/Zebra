@@ -4,7 +4,7 @@
 
 1542266155 c:\users\surface\desktop\单片机程序架构设计\zebra\em\em.h
 
-1542266237 source:c:\users\surface\desktop\单片机程序架构设计\zebra\em\em_behavior.c
+1542428438 source:c:\users\surface\desktop\单片机程序架构设计\zebra\em\em_behavior.c
 	"em.h"
 	"em_interface.h"
 	"../lib/c-algorithms/src/queue.h"
@@ -12,12 +12,14 @@
 1542266126 c:\users\surface\desktop\单片机程序架构设计\zebra\em\em_interface.h
 	"../lib/c-algorithms/src/queue.h"
 
-1542264985 source:c:\users\surface\desktop\单片机程序架构设计\zebra\em\em_thread.c
+1542266577 source:c:\users\surface\desktop\单片机程序架构设计\zebra\em\em_thread.c
 	"em_interface.h"
 	"em_behavior.h"
 	"../lib/pt-1.4/pt.h"
+	"stdio.h"
+	"em.h"
 
-1542262299 c:\users\surface\desktop\单片机程序架构设计\zebra\em\em_behavior.h
+1542266456 c:\users\surface\desktop\单片机程序架构设计\zebra\em\em_behavior.h
 
 1159775576 c:\users\surface\desktop\单片机程序架构设计\zebra\lib\pt-1.4\pt.h
 	"lc.h"
