@@ -22,7 +22,7 @@ void* eq_push(void* c, Event_pair_t *ev)
 /* cb remove*/
 void* eq_pop(void* c, Event_pair_t *ev)
 {
-    return queue_pop_head((Queue *)c);
+    return queue_pop_tail((Queue *)c);
 }
 /* event lookup*/
 void* eq_lookup(void* c, unsigned int method)
@@ -34,4 +34,8 @@ void* eq_iterator(void* c)
 {
     return 0;
 }
-
+/* event queue is empty*/
+int eq_is_empty(void* c)
+{
+    return queue_is_empty((Queue *)c);
+}

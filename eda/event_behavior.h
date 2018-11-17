@@ -12,4 +12,6 @@ extern void* eq_pop(void *c);
 extern void* eq_lookup(void *c, unsigned int method);
 /* event traversal*/
 extern void* eq_iterator(void *c);
+/* event queue is empty*/
+int eq_is_empty(void* c);
 

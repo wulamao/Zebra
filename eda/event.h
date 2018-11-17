@@ -75,7 +75,8 @@ typedef struct _Event_manager_t
     void* (*lookup)(EventContainer c, unsigned int method);
     /* event traversal*/
     void* (*iterator)(EventContainer c);
-
+    /* sort */
+    int (*is_empty)(EventContainer c);
 } Event_manager_t;
 
 
@@ -103,4 +104,6 @@ typedef struct _Cb_manager_t
     void* (*iterator)(CbContainer c);
     /* sort */
     void (*sort)(CbContainer c);
+    /* sort */
+    int (*is_empty)(CbContainer c);
 } Cb_manager_t;
